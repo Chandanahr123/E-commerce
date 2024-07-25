@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Cargo Logistics Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cosmic Cargo Logistics Platform</h1>
+    </header>
+    <main>
+        <section id="fuel-efficiency">
+            <h2>Fuel Efficiency Calculation</h2>
+            <label for="distance">Distance (light years):</label>
+            <input type="number" id="distance" name="distance">
+            <label for="weight">Payload Weight (tons):</label>
+            <input type="number" id="weight" name="weight">
+            <label for="efficiency">Warp Drive Efficiency:</label>
+            <input type="number" id="efficiency" name="efficiency">
+            <button onclick="calculateFuel()">Calculate Fuel</button>
+            <p id="fuel-result"></p>
+        </section>
+        <section id="cargo-manifest">
+            <h2>Cargo Manifest Display</h2>
+            <textarea id="manifest-input" rows="10" cols="50" placeholder="Enter cargo manifest JSON"></textarea>
+            <button onclick="parseManifest()">Parse Manifest</button>
+            <pre id="manifest-output"></pre>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
